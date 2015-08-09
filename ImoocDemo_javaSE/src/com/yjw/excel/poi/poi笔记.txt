@@ -1,0 +1,13 @@
+1、引入poi-3.11-20141221.jar包
+commons-io-2.2.jar【文件流】
+
+2、wps可以打开由HSSFWorkbook生成的后缀名为.xlsx的文件
+
+3、微软不能打开由HSSFWorkbook生成的后缀名为.xlsx的文件，需要用XXFWorkbook
+
+4、高版本.xlsx生成用XSSFWorkbook，导入jar包有：
+xmlbeans-2.6.0.jar,
+poi-ooxml-schemas-3.11-20141221.jar,
+poi-ooxml-3.11-20141221.jar
+
+5、为了保证用户可以打开excel，一般都使用HSSF来生成低版本excel，这样不管用户装的是高版本和是低版本excel都可以打开了
